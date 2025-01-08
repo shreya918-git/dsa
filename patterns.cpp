@@ -32,7 +32,7 @@ using namespace std;
 //         }
 //         cout<<endl;
 //     }
-// // }
+//  }
 // int main(){     //half pyramid pattern
 //     int i;
 //     int n=4;
@@ -108,30 +108,71 @@ using namespace std;
 //         cout<<endl;
 //     }
 // }
+// int main(){  //butterfly pattern
+//     int i;
+//     int n=4;
+//     for(i=1;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//             cout<<"*";
+//         }
+//         for(int j=1;j<=2*(n-i);j++){
+//             cout<<" ";
+//         }
+//         for(int j=1;j<=i;j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+//     for(i=n;i>=1;i--){
+//         for(int j=1;j<=i;j++){
+//             cout<<"*";
+//         }
+//         for(int j=1;j<=2*(n-i);j++){
+//             cout<<" ";
+//         }
+//         for(int j=1;j<=i;j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
+// int main(){
+//     int i;
+//     int n=5;
+//     int val=1;
+//     for(i=1;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//            cout<<val;
+//            val=!val;
+//         }
+//         cout<<endl;
+//     }
+// }
+// int main(){   //rhombus pattern
+//     int i;
+//     int n=5;
+//     for(i=1;i<=n;i++){
+//         for(int j=1;j<=n-i;j++){
+//             cout<<" ";
+//         }
+//         for(int j=1;j<=4;j++){
+//             cout<<"*";
+//         }
+//       cout<<endl;
+//     }
+// }
 int main(){
     int i;
-    int n=4;
+    int n=5;
     for(i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            cout<<"*";
-        }
-        for(int j=1;j<=2*(n-i);j++){
+        for(int j=1;j<=n-i;j++){
             cout<<" ";
         }
-        for(int j=1;j<=i;j++){
-            cout<<"*";
+        for(int j=i;j>=1;j--){
+            cout<<j;
         }
-        cout<<endl;
-    }
-    for(i=n;i>=1;i--){
-        for(int j=1;j<=i;j++){
-            cout<<"*";
-        }
-        for(int j=1;j<=2*(n-i);j++){
-            cout<<" ";
-        }
-        for(int j=1;j<=i;j++){
-            cout<<"*";
+        for(int j=2;j<=i;j++){
+            cout<<j;
         }
         cout<<endl;
     }
